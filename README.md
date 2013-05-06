@@ -4,7 +4,7 @@ There are number of occasions when you deal with uncommon situations in georgian
 Those are mobile number validation, date formatting (not supported in i18n by default)
 and outdated, but still active, GEO character encoding.
 
-KA gem will enable you to deal with all this situations.
+KA gem will enable you to deal with all these situations.
 
 ## Installation
 

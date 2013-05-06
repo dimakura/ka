@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["dimakura@gmail.com"]
   spec.description   = %q{georgian language functionality}
   spec.summary       = %q{common functionality for georgian language software}
-  spec.homepage      = "http://carbon.ge"
+  spec.homepage      = "http://github.com/dimakura/ka"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

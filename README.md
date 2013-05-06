@@ -4,7 +4,7 @@ There are number of occasions when you deal with uncommon situations in georgian
 Those are:
 
 * mobile number validation,
-* currency to readable format ('ათი ლარი 00 თეთრი'), 
+* numbers to readable format (1 -> 'ერთი'), 
 * date formatting (not supported by i18n)
 * and outdated, but still active, GEO character encoding.
 
@@ -45,7 +45,7 @@ format_mobile(mobile, operator_pre: '[', operator_suf: ']', by: 2, separator: ' 
 `to_ka` method is integrated within `Integer` class.
 Now you can convert integers into georgian words (works upto 999,999,999,999,999).
 
-This is a often task, especialy when writing some accounting software.
+This task is often, especialy when writing some accounting software.
 
 ```ruby
 1.to_ka # => ერთი

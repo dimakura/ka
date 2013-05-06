@@ -1,6 +1,10 @@
-# Ka
+# KA write ruby in georgian
 
-TODO: Write a gem description
+There are number of occasions when you deal with uncommon situations in georgian programs.
+Those are mobile number validation, date formatting (not supported in i18n by default)
+and outdated, but still active, GEO character encoding.
+
+KA gem will enable you to deal with all this situations.
 
 ## Installation
 
@@ -18,7 +22,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Mobile numbers
+
+```ruby
+require 'ka'
+include KA
+mobile = 'my mobile: (595) 33 55 14'
+compact_mobile(mobile) # => '595335514'
+correct_mobile?(mobile) # => true
+format_mobile(mobile, operator_pre: '[', operator_suf: ']', by: 2, separator: ' ') #=> [595]33 55 14
+```
 
 ## Contributing
 

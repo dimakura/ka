@@ -28,6 +28,8 @@ Or install it yourself as:
 
 ### Mobile numbers
 
+Validation and formatting of mobile numbers are self-exmplanatory:
+
 ```ruby
 require 'ka'
 include KA
@@ -38,9 +40,15 @@ correct_mobile?(mobile) # => true
 format_mobile(mobile, operator_pre: '[', operator_suf: ']', by: 2, separator: ' ') #=> [595]33 55 14
 ```
 
-### Number tokenizer
+### Number spelling
 
-TODO:
+`to_ka` method is integrated within `Integer` class.
+Now you can convert integers into georgian words (works upto 999,999,999,999,999).
+
+```ruby
+1.to_ka # => ერთი
+999_999_999_999_999.to_ka # => ცხრაას ოთხმოცდა ცხრამეტი ტრილიონ ცხრაას ოთხმოცდა ცხრამეტი მილიარდ ცხრაას ოთხმოცდა ცხრამეტი მილიონ ცხრაას ოთხმოცდა ცხრამეტი ათას ცხრაას ოთხმოცდა ცხრამეტი
+```
 
 ### Date formats
 

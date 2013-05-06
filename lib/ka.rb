@@ -2,3 +2,4 @@
 require 'ka/version'
 require 'ka/mobile'
 require 'ka/string'
+require 'ka/integer'

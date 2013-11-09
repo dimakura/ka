@@ -1,4 +1,4 @@
-# KA: write georgian sofwate with ruby
+# KA: write georgian softwate with ruby
 
 There are number of occasions when you deal with uncommon situations in georgian software.
 Those are:
